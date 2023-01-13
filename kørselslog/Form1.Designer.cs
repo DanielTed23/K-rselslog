@@ -59,6 +59,7 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -80,6 +81,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.textBox6);
@@ -349,6 +351,17 @@
             this.button1.Text = "+ Tilføj";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button6.Location = new System.Drawing.Point(342, 258);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(71, 28);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "+ Tilføj";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,6 +413,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
     }
 }
 
