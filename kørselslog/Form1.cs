@@ -34,8 +34,8 @@ namespace Kørselslog
                 MessageBox.Show(ex.Message);
             }
 
-
- 
         }
+
+      
     }
 }
