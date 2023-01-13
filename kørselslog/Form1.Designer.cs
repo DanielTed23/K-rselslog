@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +43,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,11 +58,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -93,6 +93,26 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(430, 358);
             this.panel4.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(29, 177);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 15);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Slut destination";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(29, 131);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 15);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Start destination";
             // 
             // textBox6
             // 
@@ -193,6 +213,33 @@
             this.panel3.Size = new System.Drawing.Size(476, 548);
             this.panel3.TabIndex = 2;
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(178, 218);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(195, 20);
+            this.textBox7.TabIndex = 14;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(63, 223);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 15);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Bil Mærke";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(63, 162);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 15);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Nummerplade";
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(178, 161);
@@ -272,9 +319,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 73);
+            this.label1.Size = new System.Drawing.Size(342, 73);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bruger Menu";
+            this.label1.Text = "Kørselslog";
             // 
             // printPreviewDialog1
             // 
@@ -285,53 +332,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 131);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 15);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Start destination";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 177);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 15);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Slut destination";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(63, 162);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 15);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Nummerplade";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(63, 223);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 15);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Bil Mærke";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(178, 218);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(195, 20);
-            this.textBox7.TabIndex = 14;
             // 
             // Form1
             // 
