@@ -17,9 +17,25 @@ namespace Kørselslog
             InitializeComponent();
         }
 
-        private void Form7_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+           DialogResult iExit;
+
+            try
+            {
+                iExit = MessageBox.Show("Vil du gå tilbage til hovedmenuen?", "TestDrive", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (iExit == DialogResult.Yes)
+                {
+                    this.Close();   
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
 
         }
+       
     }
 }

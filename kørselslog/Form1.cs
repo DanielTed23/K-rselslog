@@ -23,7 +23,7 @@ namespace Kørselslog
 
             try
             {
-                iExit = MessageBox.Show("Confirm if u want to exit", "TestDrive", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                iExit = MessageBox.Show("Sikker på du vil afslutte?", "TestDrive", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (iExit == DialogResult.Yes)
                 {
                     Application.Exit();
@@ -36,6 +36,25 @@ namespace Kørselslog
 
         }
 
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.ShowDialog();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.ShowDialog();
+        }
+       
+
     }
 }
