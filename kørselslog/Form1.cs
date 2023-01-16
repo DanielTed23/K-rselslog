@@ -38,25 +38,11 @@ namespace Kørselslog
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button1_form1_OpenForm2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             form2.ShowDialog();
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
-        }
-
         private void button7_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
@@ -72,5 +58,7 @@ namespace Kørselslog
         {
 
         }
+
+       
     }
 }
