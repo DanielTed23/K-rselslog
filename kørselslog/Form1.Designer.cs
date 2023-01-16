@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -97,11 +97,22 @@
             this.panel4.Size = new System.Drawing.Size(430, 358);
             this.panel4.TabIndex = 4;
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button6.Location = new System.Drawing.Point(335, 43);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(71, 28);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "+ Tilføj";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 177);
+            this.label9.Location = new System.Drawing.Point(29, 200);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 15);
             this.label9.TabIndex = 13;
@@ -111,7 +122,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 131);
+            this.label8.Location = new System.Drawing.Point(29, 146);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 15);
             this.label8.TabIndex = 12;
@@ -119,14 +130,14 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(169, 176);
+            this.textBox6.Location = new System.Drawing.Point(169, 195);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(195, 20);
             this.textBox6.TabIndex = 11;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(169, 131);
+            this.textBox5.Location = new System.Drawing.Point(169, 146);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 20);
             this.textBox5.TabIndex = 10;
@@ -143,7 +154,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(169, 79);
+            this.textBox1.Location = new System.Drawing.Point(169, 99);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(195, 20);
             this.textBox1.TabIndex = 8;
@@ -152,7 +163,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 79);
+            this.label4.Location = new System.Drawing.Point(29, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 15);
             this.label4.TabIndex = 5;
@@ -160,7 +171,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(169, 223);
+            this.textBox2.Location = new System.Drawing.Point(169, 247);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 20);
             this.textBox2.TabIndex = 9;
@@ -169,7 +180,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 228);
+            this.label6.Location = new System.Drawing.Point(29, 248);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 15);
             this.label6.TabIndex = 7;
@@ -184,6 +195,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Hent en liste over ruter";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button2
             // 
@@ -216,6 +228,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(476, 548);
             this.panel3.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button1.Location = new System.Drawing.Point(348, 270);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 28);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "+ Tilføj";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox7
             // 
@@ -339,28 +362,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button1.Location = new System.Drawing.Point(348, 270);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 28);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "+ Tilføj";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button6.Location = new System.Drawing.Point(342, 258);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(71, 28);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "+ Tilføj";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

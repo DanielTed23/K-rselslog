@@ -54,7 +54,11 @@ namespace Kørselslog
             Form7 form7 = new Form7();
             form7.ShowDialog();
         }
-       
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form8 form8 = new Form8();
+            form8.ShowDialog();
+        }
     }
 }
