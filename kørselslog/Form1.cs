@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kørselslog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,27 +39,32 @@ namespace Kørselslog
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
-            form8.ShowDialog();
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
