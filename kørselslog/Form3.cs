@@ -15,6 +15,7 @@ namespace Kørselslog
         public Form3()
         {
             InitializeComponent();
+            this.Text = "Log menu";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace Kørselslog
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

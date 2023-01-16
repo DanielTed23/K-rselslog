@@ -15,7 +15,7 @@ namespace Kørselslog
         public Form2()
         {
             InitializeComponent();
-            
+            this.Text = "Bruger menu";
         }
 
         private void button1_Click(object sender, EventArgs e)

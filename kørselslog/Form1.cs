@@ -16,6 +16,7 @@ namespace Kørselslog
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Kørselslog";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace Kørselslog
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
